@@ -66,6 +66,8 @@
             setState(recordStates, toggleStates[0]);
             if (shouldToggle) {
                 ambedo.toggle.prototype.state = true;
+            }else{
+                ambedo.toggle.prototype.state = false;
             }
         }
         return getState(recordStates);
