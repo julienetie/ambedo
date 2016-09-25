@@ -62,5 +62,5 @@ on.addEventListener('click', function() {
   }
 }, false);
 ```
-You can have finite states, toggle is currently limited to two states, this is an extremely primitve plugin that can be easliy be imporved,
+You can have finite states, toggle is currently limited to two states, this is an extremely primitve plugin that can easliy be imporved,
 can be amended for node use.
