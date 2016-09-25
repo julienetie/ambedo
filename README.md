@@ -1,5 +1,5 @@
 # ambedo
-Minimal Finite-state Machine
+Minimal Immutable Finite-state Machine.
 
 ## Example: 
 https://jsfiddle.net/julienetienne/rqc7byLa/4/
@@ -22,11 +22,7 @@ https://jsfiddle.net/julienetienne/rqc7byLa/4/
 }
 ```
 
-First create the state store where all your states live:
-```
-var stateStore = {};
-```
-Then add a state:
+Add a record:
 ```
 ambedo.store({
   name: 'lights',
