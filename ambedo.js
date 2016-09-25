@@ -1,17 +1,18 @@
 (function() {
 
     var ambedo = {};
+    ambedo.stateStore = {};
     ambedo.store = function(record) {
         function checkStateNameExist(stateName) {
             return stateName === record.name;
         }
         // check stateStore to see if new record name exist.
-        var recordNameExist = !!Object.keys(stateStore).filter(checkStateNameExist).length;
+        var recordNameExist = !!Object.keys(ambedo.stateStore).filter(checkStateNameExist).length;
         if (recordNameExist) {
             throw new Error(record.name + ' is already in the stateStore.');
         } else {
             // Add record to the stateStore.
-            stateStore[record.name] = record.state;
+            ambedo.stateStore[record.name] = record.state;
         }
     };
 
@@ -25,7 +26,7 @@
             toggleStates = [toggleStateStr];
         }
 
-        var recordStates = stateStore[stateName];
+        var recordStates = ambedo.stateStore[stateName];
 
         /*
           function getCurrentState(states) {
