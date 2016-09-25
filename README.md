@@ -1,7 +1,7 @@
 # ambedo
 Minimal Finite-state Machine
 
-# Example: 
+### Example: 
 https://jsfiddle.net/julienetienne/rqc7byLa/4/
 ### HTML
 ```
