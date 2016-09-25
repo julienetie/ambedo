@@ -1,9 +1,9 @@
 # ambedo
 Minimal Finite-state Machine
 
-### Example: 
+## Example: 
 https://jsfiddle.net/julienetienne/rqc7byLa/4/
-### HTML
+### HTML to demo
 ```
 <button>ON/ off</button>
 <button>ON</button>
@@ -11,7 +11,7 @@ https://jsfiddle.net/julienetienne/rqc7byLa/4/
 <!-- The light Switch -->
 <div id="light"></div>
 ```
-### CSS
+### CSS to demo
 ```
 #light {
   width: 100px;
@@ -66,4 +66,5 @@ on.addEventListener('click', function() {
   }
 }, false);
 ```
-You can have finite states, toggle is currently limited, this is an extremely primitve plugin that can be easliy be imporved.
+You can have finite states, toggle is currently limited to two states, this is an extremely primitve plugin that can be easliy be imporved,
+can be amended for node use.
